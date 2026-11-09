@@ -1,0 +1,12 @@
+date,run,model,commit,seed,main_change,learning_rate,batch_size,max_epochs,best_epoch,best_val_loss,test_accuracy,test_loss,macro_f1,comments
+TBD,CNN-B01,CNN,pre-repo,42,Deliverable 1 baseline,0.001,32,20,9,0.3181,0.9567,0.2644,0.7729,Original 8-class patch baseline from Deliverable 1
+TBD,CNN-B02,CNN,pre-repo,42,D2 baseline on 7571-image subset,0.001,32,20,19,0.0486,0.9868,0.0556,0.9871,Strong baseline performance on Deliverable 2 subset
+TBD,CNN-D03,CNN,pre-repo,42,Increase maximum epochs to 40,0.001,32,40,4,0.1632,0.9472,0.1765,0.9447,Early stopping activated before reaching 40 epochs
+TBD,CNN-D04,CNN,pre-repo,42,Reduce initial learning rate to 0.0005,0.0005,32,20,15,0.0408,0.9868,0.0565,0.9873,Best CNN validation loss and macro F1
+TBD,CNN-D05,CNN,pre-repo,42,Increase dropout from 0.30 to 0.50,0.001,32,20,13,0.0669,0.9855,0.0816,0.9855,Higher dropout slightly reduced performance
+TBD,RNN-B01,RNN,pre-repo,42,Deliverable 1 LSTM baseline,0.001,32,30,7,2.1807,0.1333,2.1790,0.1144,Raw EEG input with LSTM 64
+TBD,RNN-D02,RNN,pre-repo,42,Add gradient clipping clipnorm=1.0,0.001,32,30,6,2.1797,0.1309,2.1904,0.1157,No meaningful improvement over baseline
+TBD,RNN-D03,RNN,pre-repo,42,Replace LSTM with Bidirectional LSTM,0.001,32,30,3,2.1848,0.1284,2.1871,0.1079,Architectural complexity did not improve test performance
+TBD,RNN-D04,RNN,pre-repo,42,Replace LSTM with GRU,0.001,32,30,16,2.1718,0.1210,2.2096,0.1028,Improved validation loss but lower test performance
+TBD,RNN-D05,RNN,pre-repo,42,Use concatenated delta theta alpha beta gamma signals,0.001,32,30,1,2.1897,0.1309,2.2044,0.1068,Direct frequency-band signals did not improve generalization
+TBD,RNN-D06,RNN,pre-repo,42,Use windowed band-power features,0.001,32,30,5,2.1386,0.1630,2.1706,0.1567,Best RNN result; feature representation improved generalization
